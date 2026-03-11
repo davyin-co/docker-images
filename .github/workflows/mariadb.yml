@@ -8,8 +8,8 @@ jobs:
     strategy:
       matrix:
         version:
-          - IMAGE_FROM: "maraidb:12.2.2"
-            TO: "davyin/images:maraidb-12.2"
+          - IMAGE_FROM: "mariadb:12.2.2"
+            TO: "davyin/images:mariadb-12.2"
 
     steps:
       - name: Checkout
