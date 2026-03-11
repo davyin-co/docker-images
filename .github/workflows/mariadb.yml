@@ -1,4 +1,4 @@
-name: postgres
+name: mariadb
 
 on: workflow_dispatch
 
@@ -9,7 +9,7 @@ jobs:
       matrix:
         version:
           - IMAGE_FROM: "mariadb:12.2.2"
-            TO: "davyin/images:mariadb-12.2"
+            TO: "davyin/images:mariadb-12.2.2"
 
     steps:
       - name: Checkout
